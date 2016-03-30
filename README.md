@@ -17,12 +17,26 @@ The "Blink.X" project in the firmware folder does exactly what it says on the ti
 
 # Why is it dangerous?
 
-The other two projects, HID.X and HID2.X are slightly more complicated.
-HID.X identifies itself as a USB keyboard and immediately starts typing a-z, and 0-9 upon being plugged in. This is barely changed from the Microchip example code, and doesn't include their USB libraries.
-To compile this, you'll need to go [here](http://www.microchip.com/mplab/microchip-libraries-for-applications) and download Microchip Libraries for Applications. It's free and includes some very cool USB stuff.
+The other two projects, HID and HID2 are slightly more complicated.
+HID identifies itself as a USB keyboard and immediately starts typing a-z, and 0-9 upon being plugged in. This is barely changed from the Microchip example code, and doesn't include their USB libraries.
 
-HID2.X uses the same libraries, and identifies itself as a HID keyboard as well. It types `GUI-key->R, notepad.exe, hello world`. On a Windows machine, this opens Notepad and types "hello world".
+HID2 uses the same libraries, and identifies itself as a HID keyboard as well. It types `GUI-key->R, notepad.exe, hello world`. On a Windows machine, this opens Notepad and types "hello world".
 
 Innocuous, but it's pretty obvious that this can be used in pretty scary ways.
 
 That's pretty much as far as I intend to take this, I've lost interest. There might be methods of detecting what kind of computer the drive gets plugged into and tailoring the attack, too.
+
+# How do I get started?
+
+If you don't have the latest version of Microchip MPLAB X and the XC8 compiler, download them at the links. Everything is free.
+
+To compile this, you'll need to go [here](http://www.microchip.com/mplab/microchip-libraries-for-applications) and download Microchip Libraries for Applications. It also includes some other very cool USB stuff.
+
+After installation, go to whereever you installed it, and copy the `mla` folder into `Firmware` in this repo.
+
+At the very least, you should have `USB-Drop-Stick\Firmware\mla\bsp` and `USB-Drop-Stick\Firmware\mla\framework` and all of the files inside.
+
+
+After that, open up MPLAB, open project, and navigate to the HID2 folder. Compile it once to test, and then start modifying! `main.c` and `app_device_keyboard.c` are where the fun happens.
+
+Alternatively, I have included the hex and elf firmware images if you just want to flash the board.
