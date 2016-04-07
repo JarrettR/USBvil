@@ -34,7 +34,7 @@ To compile this, you'll need to go [here](http://www.microchip.com/mplab/microch
 
 After installation, go to whereever you installed it, and copy the `mla` folder into `Firmware` in this repo.
 
-At the very least, you should have `USB-Drop-Stick\Firmware\mla\bsp` and `USB-Drop-Stick\Firmware\mla\framework` and all of the files inside.
+At the very least, you should have `USBvil\Firmware\mla\bsp` and `USBvil\Firmware\mla\framework` and all of the files inside.
 
 
 After that, open up MPLAB, open project, and navigate to the HID2 folder. Compile it once to test, and then start modifying! `main.c` and `app_device_keyboard.c` are where the fun happens.
