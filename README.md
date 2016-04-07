@@ -1,4 +1,4 @@
-# USB-Drop-Stick
+# USBvil
 Don't plug in unknown flashdrives!
 
 
@@ -28,7 +28,7 @@ That's pretty much as far as I intend to take this, I've lost interest. There mi
 
 # How do I get started?
 
-If you don't have the latest version of Microchip MPLAB X and the XC8 compiler, download them at the links. Everything is free.
+If you don't have the latest version of Microchip [MPLAB X](http://www.microchip.com/mplab/mplab-x-ide) and the [XC8 compiler](http://www.microchip.com/mplab/compilers), download them at the links. Everything is free.
 
 To compile this, you'll need to go [here](http://www.microchip.com/mplab/microchip-libraries-for-applications) and download Microchip Libraries for Applications. It also includes some other very cool USB stuff.
 
