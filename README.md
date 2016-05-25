@@ -44,6 +44,6 @@ Alternatively, I have included the hex and elf firmware images if you just want 
 
 # How do I make one?
 
-Just for kicks, I'm testing out https://kitnic.it/
+Just for kicks, I'm testing out Kitnic. Check it [here](https://kitnic.it/boards/github.com/JarrettR/USBvil/).
 
-It should make the board/BOM ordering process a little bit easier, we'll see how it goes. That's just a landing page to this repo, so all of the data is here, too.
+The service should make the board/BOM ordering process a little bit easier, we'll see how it goes. That's just a landing page to this repo, so all of the data is here, too.
